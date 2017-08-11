@@ -8,6 +8,7 @@ Each item has a categoryId property and this property poit to a specific categor
 - music
 - books
 - medical product
+
 With this kind of input provided it is possible to calculate gross price of every item, sales taxes and the total of the receipt.
 Output is printed in console and it is visibile from travis console too.
 

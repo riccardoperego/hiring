@@ -6,6 +6,7 @@ public class Item {
 	private String categoryId;
 	private Double netPrice;
 	private Boolean isImported;
+	private Double totalPrice;
 	
 	public Item(String name, String categoryId, Double netPrice,
 			Boolean isImported) {
@@ -40,6 +41,14 @@ public class Item {
 	}
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
+	}
+
+	public Double getTotalPrice() {
+		return totalPrice;
+	}
+
+	public void setTotalPrice(Double totalPrice) {
+		this.totalPrice = totalPrice;
 	}
 	
 }

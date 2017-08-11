@@ -1,6 +1,5 @@
 package it.riccardo.home.hiring;
 
-import it.riccardo.home.hiring.model.Basket;
 import it.riccardo.home.hiring.model.CategoryUniverse;
 import it.riccardo.home.hiring.model.Item;
 import it.riccardo.home.hiring.model.Receipt;
@@ -58,7 +57,7 @@ public class AppTest
     /**
      * Test basket items
      */
-    public void testBasket(){
+    /*public void testBasket(){
     	// populate categories
     	this.testCategories();
     	
@@ -75,7 +74,7 @@ public class AppTest
     	assertEquals(3, basket.getListOfItems().size());
     	assertEquals("Music CD", basket.getListOfItems().get(1).getName());    	
 
-    }
+    }*/
     
     /**
      * test calculator

@@ -2,6 +2,7 @@ package it.riccardo.home.hiring.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Receipt {
 	private List<Item> items = new ArrayList<Item>();
@@ -34,10 +35,10 @@ public class Receipt {
 	public String toString(){
 		String receiptDescription = "";
 		for(Item item : items){
-			receiptDescription = receiptDescription.concat(item.getName() + ":\t" + item.getTotalPrice() + "\n");
+			receiptDescription = receiptDescription.concat(item.getName() + ":\t" + String.format(Locale.US, "%.2f", item.getTotalPrice()) + "\n");
 		}
-		receiptDescription = receiptDescription.concat("Sales taxes:\t" + getTotalAmountOfSalesTaxes() + "\n");
-		receiptDescription = receiptDescription.concat("Total:\t" + getTotalCost());
+		receiptDescription = receiptDescription.concat("Sales taxes:\t" + String.format(Locale.US, "%.2f", getTotalAmountOfSalesTaxes()) + "\n");
+		receiptDescription = receiptDescription.concat("Total:\t" + String.format(Locale.US, "%.2f", getTotalCost()));
 		
 		return receiptDescription;
 		

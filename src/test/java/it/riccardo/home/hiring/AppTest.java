@@ -131,8 +131,8 @@ public class AppTest
     	System.out.println("\n---- \t ---- \t ----\n");
     	
     }
-    
-    public void testRoundingRulesLogic(){
+
+    /*public void testRoundingRulesLogic(){
     	Double net = 47.50;
     	Double taxPercentage = 0.15;
     	Double salesTax = net * taxPercentage;
@@ -140,11 +140,6 @@ public class AppTest
     	System.out.println(salesTax);
     	salesTax = ((double) (5 * (Math.round(salesTax*100/5)))/100);
     	
-    	System.out.println(salesTax);
-    	
-    	
-    	
-    	
-    	
-    }
+    	System.out.println(salesTax);	
+    }*/
 }
